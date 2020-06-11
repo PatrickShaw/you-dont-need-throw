@@ -1,0 +1,5 @@
+{
+  "name": "contacts-3",
+  "main": "./src/index.ts",
+  "version": "3.0.0"
+}

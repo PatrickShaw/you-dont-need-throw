@@ -1,0 +1,8 @@
+{
+  "name": "example-5",
+  "main": "./src/index.ts",
+  "version": "1.0.0",
+  "dependencies": {
+    "third-party-contact-finder-2": "2.0.0"
+  }
+}

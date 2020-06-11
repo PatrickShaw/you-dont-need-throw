@@ -1,0 +1,25 @@
+{
+  "name": "you-dont-need-throw",
+  "private": true,
+  "scripts": {
+    "example:1": "ts-node ./examples/example-1/src/index.ts",
+    "example:2": "ts-node ./examples/example-2/src/index.ts",
+    "example:3": "ts-node ./examples/example-3/src/index.ts",
+    "example:4": "ts-node ./examples/example-4/src/index.ts",
+    "example:5": "ts-node ./examples/example-5/src/index.ts"
+  },
+  "workspaces": [
+    "examples/*",
+    "dependencies/*"
+  ],
+  "nohoist": [
+    "examples/*",
+    "dependencies/*"
+  ],
+  "description": "An explanation of why you don't need throw",
+  "devDependencies": {
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.3",
+    "example-1": "1.0.0"
+  }
+}
