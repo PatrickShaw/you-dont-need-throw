@@ -1,8 +1,8 @@
 // index.ts
-import { findContact, Contact } from 'third-party-contact-finder-2';
+import { findContacts, Contact } from 'third-party-contact-finder-2';
 
 try {
-  const contacts: Contact[] = findContact({
+  const contacts: Contact[] = findContacts({
     firstName: 'X Æ A-12',
   });
   

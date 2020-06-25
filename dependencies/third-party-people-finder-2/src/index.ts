@@ -1,5 +1,5 @@
 // node_modules/third-party-contact-finder
-import { validateContact, Contact } from 'contacts-2';
+import { validateContact, Contact } from 'contacts-1';
 
 export { Contact };
 
@@ -10,8 +10,16 @@ const contactDatabase = [
   { firstName: 'X Æ A-12', lastName: 'Musk' },
 ];
 
-export const findContact = (searchDetails: Contact) => { 
+export const findContacts = (searchDetails: Contact) => { 
   const searchedKeys = Object.keys(searchDetails);
+
+  if (/\d/.test(searchDetails.firstName)) {
+    throw new Error('firstName cannot contain number');
+  }
+
+  if (/\d/.test(searchDetails.lastName)) {
+    throw new Error('nameKey cannot contain number');
+  }
 
   validateContact(searchDetails);
   

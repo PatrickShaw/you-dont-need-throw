@@ -10,7 +10,7 @@ const contactDatabase = [
   { firstName: 'X Æ A-12', lastName: 'Musk' },
 ];
 
-export const findContact = (searchDetails: Contact) => { 
+export const findContacts = (searchDetails: Contact) => { 
   const searchedKeys = Object.keys(searchDetails);
 
   validateContact(searchDetails);
