@@ -13,6 +13,8 @@ const contactDatabase = [
 export const findContacts = (searchDetails: Contact) => { 
   const searchedKeys = Object.keys(searchDetails);
 
+  validateContact(searchDetails);
+
   if (/\d/.test(searchDetails.firstName)) {
     throw new Error('firstName cannot contain number');
   }
@@ -21,8 +23,6 @@ export const findContacts = (searchDetails: Contact) => {
     throw new Error('nameKey cannot contain number');
   }
 
-  validateContact(searchDetails);
-  
   return contactDatabase.filter(person => {
     for (const key of searchedKeys) {
       if (searchDetails[key] !== person[key]) {

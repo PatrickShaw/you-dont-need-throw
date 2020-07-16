@@ -5,7 +5,7 @@ export type Contact = {
   lastName?: string;
 };
 
-export const validateContact = (contact) => {
+export const validateContact = (contact: Contact) => {
   for (const nameKey of ['firstName', 'lastName']) {
     if (contact[nameKey] === undefined) {
       continue;

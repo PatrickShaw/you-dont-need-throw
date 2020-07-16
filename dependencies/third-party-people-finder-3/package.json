@@ -1,0 +1,9 @@
+{
+  "name": "third-party-contact-finder-3",
+  "main": "./src/index.ts",
+  "version": "3.0.0",
+  "dependencies": {
+    "contacts-2": "2.0.0",
+    "resultful": "^0.0.10"
+  }
+}

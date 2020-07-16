@@ -6,7 +6,8 @@
     "example:2": "ts-node ./examples/example-2/src/index.ts",
     "example:3": "ts-node ./examples/example-3/src/index.ts",
     "example:4": "ts-node ./examples/example-4/src/index.ts",
-    "example:5": "ts-node ./examples/example-5/src/index.ts"
+    "example:5": "ts-node ./examples/example-5/src/index.ts",
+    "example:6": "ts-node ./examples/example-6/src/index.ts"
   },
   "workspaces": [
     "examples/*",
