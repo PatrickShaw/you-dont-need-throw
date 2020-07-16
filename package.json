@@ -2,12 +2,12 @@
   "name": "you-dont-need-throw",
   "private": true,
   "scripts": {
-    "example:1": "ts-node ./examples/example-1/src/index.ts",
-    "example:2": "ts-node ./examples/example-2/src/index.ts",
-    "example:3": "ts-node ./examples/example-3/src/index.ts",
-    "example:4": "ts-node ./examples/example-4/src/index.ts",
-    "example:5": "ts-node ./examples/example-5/src/index.ts",
-    "example:6": "ts-node ./examples/example-6/src/index.ts",
+    "example:1": "ts-node ./examples/example-1-throwing-non-Error/src/index.ts",
+    "example:2": "ts-node ./examples/example-2-wrapping-throw-in-try-catch/src/index.ts",
+    "example:3": "ts-node ./examples/example-3-correcting-api-consumption/src/index.ts",
+    "example:4": "ts-node ./examples/example-4-upgrading-dependency-and-getting-a-new-error/src/index.ts",
+    "example:5": "ts-node ./examples/example-5-accounting-for-thrown-error/src/index.ts",
+    "example:6": "ts-node ./examples/example-6-using-resultful-and-returning-the-errors/src/index.ts",
     "live-demo": "ts-node ./examples/live-demo/src/index.ts"
   },
   "workspaces": [
